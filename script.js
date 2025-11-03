@@ -46,12 +46,12 @@ function initCountdown(elementId, eventDateStr) {
   }, 1000);
 }
 
-// Initialize timers for each event (Update with real event dates/times)
-initCountdown("nikah-timer", "2026-01-01T22:00:00+05:30");    // India Standard Time
+
+initCountdown("nikah-timer", "2026-01-01T22:00:00+05:30");   
 initCountdown("rukhsati-timer", "2026-01-02T01:00:00+05:30");
 initCountdown("walima-timer", "2026-01-04T19:00:00+05:30");
 
-/* ================ SCROLL SPY FOR ACTIVE NAV LINK ================ */
+
 const sectionIds = ['our-story', 'key-events', 'venue','wedding-ceremony', 'rsvp'];
 const navLinks = sectionIds.map(id => document.querySelector(`nav .nav-links a[href="#${id}"]`));
 window.addEventListener('scroll', () => {
